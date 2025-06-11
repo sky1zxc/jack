@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>jack-bio</title>
+    <style>
+        .page-fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.5s ease-out forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card page-fade-in">
+        <div class="card-content">
+            <div class="avatar-container">
+                <div class="avatar-wrapper">
+                    <img src="images/avatars/jack-avatar.jpg" class="jack-avatar" alt="jack-avatar" />
+                    <div class="tv-noise"></div>
+                </div>
+            </div>
+
+            <h1 class="jack-nickname">#джек</h1>
+
+            <div class="info-item">
+                <div class="info-label">Имя</div>
+                <p class="info-value">Артем</p>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="info-item">
+                <div class="info-label">Пол</div>
+                <p class="info-value">Мужской</p>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="info-item">
+                <div class="info-label">День рождения</div>
+                <p class="info-value">5 октября</p>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="info-item">
+                <div class="info-label">Описание</div>
+                <p class="info-value">Тут должно быть крутое описание, но я его пока не придумал</p>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="info-item">
+                <div class="info-label">Соцсети</div>
+                <div class="social-links">
+                    <a href="https://t.me/sky1zxc" class="telegram-button" target="_blank">Telegram</a>
+                    <a href="https://www.tiktok.com/@MS4wLjABAAAAL7ThkZOQSSxT-eBRJlKB9JXTvBTU2qXyt_vwiO3Fo60GT79nWD21p2FOhHc_UU1D?_t=ZS-8x67l0vjjC3&_r=1" class="tiktok-button" target="_blank">TikTok</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="image-buttons">
+            <button class="img-btn active" data-url="index.html" title="Обо мне">
+                <img src="images/logos/about-me.png" alt="Обо мне" />
+            </button>
+            <button class="img-btn" data-url="projects.html" title="Проекты">
+                <img src="images/logos/projects.png" alt="Проекты" />
+            </button>
+        </div>
+    </div>
+
+    <script src="scripts/navigation.js"></script>
+</body>
+</html>

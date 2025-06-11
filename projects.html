@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>jack-projects</title>
+    <link rel="stylesheet" href="style/projects.css" />
+    <link rel="stylesheet" href="style/modal.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <style>
+        .page-fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.5s ease-out forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card page-fade-in">
+        <h1 class="jack-nickname" style="margin-bottom:1.5rem;">Мои проекты</h1>
+
+        <div class="projects-list">
+            <div class="project-card" data-project-id="0">
+                <img src="images/logos/projects/DistanceTracker-logo.jpg" alt="Telegram-bot" class="project-image" />
+                <div class="project-info">
+                    <h2 class="project-title">DistanceTracker</h2>
+                    <div class="project-location">Telegram-бот</div>
+                    <p class="project-description">
+                        Это мой первый завершённый проект — бот, позволяющий делиться геолокацией и считать расстояние между вами...
+                    </p>
+                </div>
+            </div>
+
+            <div class="project-card" data-project-id="1">
+                <img src="images/logos/projects/CreateModules-logo.jpg" alt="Портфолио" class="project-image" />
+                <div class="project-info">
+                    <h2 class="project-title">CreateModules[BETA]</h2>
+                    <div class="project-location">Telegram-бот</div>
+                    <p class="project-description">
+                        Это проект для генерации модулей под юзерботов: выбираешь платформу, пишешь описание, и нейросеть создаёт файл...
+                    </p>
+                </div>
+            </div>
+
+        <div class="image-buttons">
+            <button class="img-btn" onclick="window.location.href='index.html'" title="Обо мне">
+                <img src="images/logos/about-me.png" alt="Обо мне" />
+            </button>
+            <button class="img-btn active" onclick="window.location.href='projects.html'" title="Проекты">
+                <img src="images/logos/projects.png" alt="Проекты" />
+            </button>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">×</button>
+            <div class="modal-header">
+                <img src="" alt="Project Image" class="modal-avatar" id="modalAvatar">
+                <div>
+                    <h2 class="modal-title" id="modalTitle"></h2>
+                    <div class="modal-location" id="modalLocation"></div>
+                </div>
+            </div>
+            <p class="modal-description" id="modalDescription"></p>
+            <a href="#" class="modal-button" id="modalButton">Посмотреть проект</a>
+        </div>
+    </div>
+
+    <script src="scripts/projects.js"></script>
+</body>
+</html>
